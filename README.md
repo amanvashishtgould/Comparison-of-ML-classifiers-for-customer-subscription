@@ -34,7 +34,7 @@ The data is split into train test sets using test size of 20%, and after that it
 
 **Modeling: Baseline Dummy and Initial Classification Models**
 
-Before we build our first model, we establish a baseline using a DummyClassifer that our models should aim to beat. Then initial classification models are run using default parameters with Logistic Regression, K Nearest Neighbor (KNN), Decision Trees, and Support Vector Machines (SVM) classifier. The time to fit these models (in seconds), training accuracy and test accuracy of these are summarized below. Additionally, it was reasoned that F-1 score is a better score as it maximizes both recall and precision, as it would be preferable to minimize both false negatives (where an actual subscriber is predicted as non-subscribed--this scenario can lead to loss of potential important clients/subscribers) and false positives (where an actual non-subscriber is predicted as subscribed--this scenario can lead to a waste of time and resources). These F-1 scores are also shown below in parenthesis.
+Before we build our first model, we establish a baseline using a DummyClassifer that our models should aim to beat. Then initial classification models are run using default parameters with Logistic Regression, K Nearest Neighbor (KNN), Decision Trees, and Support Vector Machines (SVM) classifiers. The time to fit these models (in seconds), training accuracy and test accuracy of these are summarized below. Additionally, it was reasoned that F-1 score is a better score as it maximizes both recall and precision, as it would be preferable to minimize both false negatives (where an actual subscriber is predicted as non-subscribed--this scenario can lead to loss of potential important clients/subscribers) and false positives (where an actual non-subscriber is predicted as subscribed--this scenario can lead to a waste of time and resources). These F-1 scores are also shown below in parenthesis.
 
 *Dummy Classifier:*
 
@@ -137,7 +137,9 @@ This decision tree model with additional variables related to call information a
 
 **Recommendations and Next steps (for Deployment)**
 
-The most important features for whether or not a contact would subscribe to the deposit are housing, default, and loan characteristics of the contact/client.
+The most important features for whether or not a client contact would subscribe to the deposit are Loan, Default, and Housing characteristics of the client. This information can be used by banks to target clients for subscription.
+
 This is found with the best performing model called decision trees which has a test score (F-1 score) of 96%. ROC area under the curve for this model is also high, about 0.96. Cumulative gains curve shows that for the best performing model, with sampling just 50% of the clients/contacts, it is possible to net about 95% term subscribers.
+
 Next steps would involve running more efficient models that are popular in the machine learning world today to see if the accuracy or performance metrics improve. this would involve classifiers like Extreme Gradient Boosting Classifier, Native Bayes Classifier, and especially the Random Forests Classifier (as it uses a combination of several decision trees and can perhaps be better than the single decision tree used here).
 
