@@ -43,6 +43,7 @@ Training accuracy(f1): 0.50 (0.67)
 Test accuracy(f1): 0.50 (0.66)
 
 
+
 Logistic Regression Classifier
 
 Time to train: 0.04
@@ -50,6 +51,7 @@ Time to train: 0.04
 Training accuracy(f1): 0.61 (0.63)
 
 Test accuracy(f1): 0.61 (0.62)
+
 
 
 KNN Classifier
@@ -61,6 +63,7 @@ Training accuracy(f1): 0.95 (0.95)
 Test accuracy(f1): 0.90 (0.90)
 
 
+
 Decision tree Classifier
 
 Time to train: 0.06
@@ -70,6 +73,7 @@ Training accuracy(f1): 1(1)
 Test accuracy(f1): 0.95(0.96)
 
 
+
 SVM Classifier
 
 Time to train: 267
@@ -77,6 +81,7 @@ Time to train: 267
 Training accuracy(f1): 0.76(0.74)
 
 Test accuracy(f1): 0.76 (0.75)
+
 
 
 *Model Performance Discussion*- In terms of train as well as test accuracy, KNN and decision tree performed best. Their test scores were 90% for KNN and 95.9% for Decision Trees. All models had a test accuracy higher than test accuracy of dummy classifier (50%). However, the test F-1 scores were not always high, e.g., Logistic regression which had the lowest test F-1 score (62%) of all models except dummy classifier (which had F1 score of 66%). KNN and Decision trees had the highest F-1 score of 90% and 96%, respectively. In terms of time, Logisitic Regression and Decision Trees were the fastest, followed by KNN. SVM took substantially longer than all others.
@@ -93,6 +98,7 @@ Mean fit time: 0.02
 Test F1(AUC): 0.61 (0.66)
 
 
+
 KNN
 
 Mean fit time: 0.18
@@ -100,11 +106,13 @@ Mean fit time: 0.18
 Test F1(AUC): 0.95 (0.95)
 
 
+
 Decision Trees
 
 Mean fit time: 0.04
 
 Test F1(AUC): 0.96 (0.96)
+
 
 
 SVM
