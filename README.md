@@ -1,2 +1,2 @@
 # Module17
-PracticalApplicationIII: Classification
+# Practical Application III: Classification
