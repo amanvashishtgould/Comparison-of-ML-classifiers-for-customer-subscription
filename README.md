@@ -119,9 +119,9 @@ Test F1(AUC): 0.25 (0.51)
 
 Additionally, as the paper by Moro&Laureno metioned **Cumulative Gains/Lift curve** as a commonly used metric in marketing campaigns, so this is also plotted for each model.
 
-*Hyperparameter-tuned Models' Performance Discussion* -Decision Tree classifier performed best in terms of both F-1 test score and ROC AUC, followed closely by KNN model. These two models also were the fastest to fit/run. Their F-1 scores were 96%(Decision trees) and 95%(KNN), and their AUCs were 0.96(Decision Trees) and 0.95(KNN). Decision tree was fit/run faster than KNN.
+*Hyperparameter-tuned Models' Performance Discussion* - **Decision Tree classifier performed best in terms of both F-1 test score and ROC AUC**, followed closely by KNN model. These two models also were the fastest to fit/run. Their F-1 scores were 96%(Decision trees) and 95%(KNN), and their AUCs were 0.96(Decision Trees) and 0.95(KNN). Decision tree was fit/run faster than KNN.
 The other two models (Logistic & SVM) did not really improve from their non-hyperparameterized verions, and SVM was very computationally inefficient (took about half an hour to fit wher SVC(probability=False) and atleast two hours when probability=True).
-Lastly, in terms of Cumulative gain curves, Decision Trees followed by KNN were the best. For decision trees, sampling 50% of the clients could get about 95% subscribers and for KNN, sampling 50% of the clients could get more than 90% subscribers.
+Lastly, **in terms of Cumulative gain curves, Decision Trees followed by KNN were the best. For decision trees, sampling 50% of the clients could get about 95% subscribers and for KNN, sampling 50% of the clients could get more than 90% subscribers.**
 Based on these several performance indicators/metrics, Decision Trees is the best model. Then it is explored further below in terms of feature importance. The most important features in the best perming decision trees model are Loan, followed by default, and housing status of the client. This information can be used by banks to target clients for subscription.
 
 
