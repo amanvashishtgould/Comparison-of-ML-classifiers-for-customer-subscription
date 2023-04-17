@@ -34,7 +34,7 @@ The data is split into train test sets using test size of 20%, and after that it
 
 Before we build our first model, we establish a baseline using a DummyClassifer that our models should aim to beat. Then initial classification models are run using default parameters with Logistic Regression, K Nearest Neighbor (KNN), Decision Trees, and Support Vector Machines (SVM) classifier. The time to fit these models (in seconds), training accuracy and test accuracy of these are summarized below. Additionally, it was reasoned that F-1 score is a better score as it maximizes both recall and precision, as it would be preferable to minimize both false negatives (where an actual subscriber is predicted as non-subscribed--this scenario can lead to loss of potential important clients/subscribers) and false positives (where an actual non-subscriber is predicted as subscribed--this scenario can lead to a waste of time and resources). These F-1 scores are also shown below in parenthesis.
 
-Dummy Classifier
+*Dummy Classifier:*
 
 Time to train: 0.003
 
@@ -43,8 +43,7 @@ Training accuracy(f1): 0.50 (0.67)
 Test accuracy(f1): 0.50 (0.66)
 
 
-
-Logistic Regression Classifier
+*Logistic Regression Classifier:*
 
 Time to train: 0.04
 
@@ -53,8 +52,7 @@ Training accuracy(f1): 0.61 (0.63)
 Test accuracy(f1): 0.61 (0.62)
 
 
-
-KNN Classifier
+*KNN Classifier:*
 
 Time to train: 0.17
 
@@ -63,8 +61,7 @@ Training accuracy(f1): 0.95 (0.95)
 Test accuracy(f1): 0.90 (0.90)
 
 
-
-Decision tree Classifier
+*Decision tree Classifier:*
 
 Time to train: 0.06
 
@@ -73,8 +70,7 @@ Training accuracy(f1): 1(1)
 Test accuracy(f1): 0.95(0.96)
 
 
-
-SVM Classifier
+*SVM Classifier:*
 
 Time to train: 267
 
@@ -91,31 +87,28 @@ Test accuracy(f1): 0.76 (0.75)
 
 Logistic regression, KNN, decision trees, and SVM models are tuned for hyperparameters using GridSearchCV. Furthermore, F-1 test scores are used as the scoring criteria such the F1 scores are maximized in the GridSearchCV. Classification reports are calculated and Receiver Operating Characteristic (ROC) curves are additionally plotted. The models are evaluated for their F-1 test scores and ROC Area Under Curve (AUC). These are summarized below, along with model fit times(in minutes):
 
-Logistic Regression
+*Logistic Regression:*
 
 Mean fit time: 0.02
 
 Test F1(AUC): 0.61 (0.66)
 
 
-
-KNN
+*KNN:*
 
 Mean fit time: 0.18
 
 Test F1(AUC): 0.95 (0.95)
 
 
-
-Decision Trees
+*Decision Trees:*
 
 Mean fit time: 0.04
 
 Test F1(AUC): 0.96 (0.96)
 
 
-
-SVM
+*SVM:*
 
 Mean fit time: 25.60
 
