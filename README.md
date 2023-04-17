@@ -85,7 +85,7 @@ Test accuracy(f1): 0.76 (0.75)
 
 **Modeling: Improving the models using Hyperparameter tuning and adding additional performance metrics**
 
-Logistic regression, KNN, decision trees, and SVM models are tuned for hyperparameters using GridSearchCV. Furthermore, F-1 test scores are used as the scoring criteria such the F1 scores are maximized in the GridSearchCV. Classification reports are calculated and Receiver Operating Characteristic (ROC) curves are additionally plotted. The models are evaluated for their F-1 test scores and ROC Area Under Curve (AUC). These are summarized below, along with model fit times(in minutes):
+Logistic regression, KNN, decision trees, and SVM models are tuned for hyperparameters using GridSearchCV. Furthermore, F-1 test scores are used as the scoring criteria such the F1 scores are maximized in the GridSearchCV. Classification reports are calculated and Receiver Operating Characteristic (ROC) curves are additionally plotted. The models are evaluated for their **F-1 test scores** and **ROC Area Under Curve (AUC)**. These are summarized below, along with model fit times(in minutes):
 
 *Logistic Regression:*
 
@@ -116,7 +116,8 @@ Test F1(AUC): 0.25 (0.51)
 
 
 
-Additionally, as the paper by Moro&Laureno metioned Cumulative Gains/Lift curve as a commonly used metric in marketing campaigns, so this is also plotted for each model.
+
+Additionally, as the paper by Moro&Laureno metioned **Cumulative Gains/Lift curve** as a commonly used metric in marketing campaigns, so this is also plotted for each model.
 
 *Hyperparameter-tuned Models' Performance Discussion* -Decision Tree classifier performed best in terms of both F-1 test score and ROC AUC, followed closely by KNN model. These two models also were the fastest to fit/run. Their F-1 scores were 96%(Decision trees) and 95%(KNN), and their AUCs were 0.96(Decision Trees) and 0.95(KNN). Decision tree was fit/run faster than KNN.
 The other two models (Logistic & SVM) did not really improve from their non-hyperparameterized verions, and SVM was very computationally inefficient (took about half an hour to fit wher SVC(probability=False) and atleast two hours when probability=True).
