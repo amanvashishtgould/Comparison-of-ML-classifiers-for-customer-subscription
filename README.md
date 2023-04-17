@@ -1,3 +1,4 @@
 # Module17
-BerkeleyML/AL_PracticalApplication3
+BerkeleyML/AL_PracticalApplicationIII
+
 Classification
